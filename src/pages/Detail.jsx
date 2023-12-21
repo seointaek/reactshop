@@ -103,13 +103,13 @@ export default function Detail() {
           fill
         >
           <Tab eventKey="Description" title="Description">
-            <div>1 상품 상세정보 컨포넌트 들어가는 곳</div>
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus aliquid reiciendis facilis voluptas repudiandae tenetur sapiente esse consequatur, quod vitae. Iusto ipsum nobis ducimus accusamus inventore incidunt itaque, quis est.</div>
           </Tab>
           <Tab eventKey="information" title="Aditional information">
-            <div>2 상품 기타정보 컨포넌트 들어가는 곳</div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, at voluptate autem, porro suscipit aspernatur tempore facere nemo saepe voluptatem optio necessitatibus ea vitae fugiat ex provident atque sequi dolore!</div>
           </Tab>
           <Tab eventKey="Reviews" title="Reviews">
-            <div>리뷰 컨포넌트 들어가는 곳</div>
+            <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur voluptatum et doloremque, a rerum doloribus corrupti. Voluptatibus praesentium impedit at delectus. Culpa soluta et ipsam, optio a voluptas pariatur esse.</div>
           </Tab>
         </Tabs>
       </div>
