@@ -7,7 +7,7 @@ export default function BannerCard({ item }) {
   };
   return (
     <div className={cssStyle.bannerCard}>
-      <img src={`/img/${item.bannerImg}`} alt={item.bannerTitle} />
+      <img src={`${process.env.PUBLIC_URL}/img/${item.bannerImg}`} alt={item.bannerTitle} />
       <div>
         <strong>{item.bannerTitle}</strong>
         <span>{item.price}</span>

@@ -19,7 +19,7 @@ export default function Wacthed() {
               navigator(`/detail/${list._id}`);
             }}
           >
-            <img src={`/img/${list.img}`} alt={list.title} />
+            <img src={`${process.env.PUBLIC_URL}/img/${list.img}`} alt={list.title} />
           </li>
         ))}
                    

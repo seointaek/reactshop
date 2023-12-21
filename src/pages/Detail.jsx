@@ -66,7 +66,7 @@ export default function Detail() {
 
       <div className={cssStyle.detailCon}>
         <div className={cssStyle.img}>
-          <img src={`/img/${item.img}`} alt={item.title} />
+          <img src={`${process.env.PUBLIC_URL}/img/${item.img}`} alt={item.title} />
         </div>
         <div className={cssStyle.desc}>
           <strong>{item.title}</strong>

@@ -28,7 +28,7 @@ export default function Cart() {
             <div className={cssStyle.img} onClick={() => {
                 navigator(`/detail/${Item._id}`);
               }}>
-              <img src={`/img/${Item.img}`} alt={Item.title}/>                         
+              <img src={`${process.env.PUBLIC_URL}/img/${Item.img}`} alt={Item.title}/>                         
             </div>
             <div className={cssStyle.title}>{Item.title}</div>
             <div className={cssStyle.num}>{Number(Item.price).toLocaleString()}원</div>

@@ -10,7 +10,7 @@ export default function ProductCard({ data }) {
   return (
     <figure className={cssStyle.pCard} onClick={goDetail}>
       <div>
-        <img src={`/img/${data.img}`} alt={data.title} />
+        <img src={`${process.env.PUBLIC_URL}/img/${data.img}`} alt={data.title} />
       </div>
       {data.discount !== '0' && <p>{data.discount}%</p>}
       <figcaption>
