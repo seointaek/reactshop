@@ -1,0 +1,41 @@
+.newProduct {
+  position: relative;
+  margin-top: 50px;
+}
+.newProduct > h2 {
+  padding: 2rem 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.newProduct > button {
+  position: absolute;
+  right: 0;
+  top: 2rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--gray1);
+  cursor: pointer;
+  transition: 0.3s;
+}
+.newProduct > button:hover {
+  color: var(--point-c1);
+}
+.newProduct > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 800px) {
+  .newProduct > ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .newProduct > ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

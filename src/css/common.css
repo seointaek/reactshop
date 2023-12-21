@@ -1,0 +1,153 @@
+@charset 'utf-8';
+@font-face {
+  font-family: 'S-CoreDream-3Light';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+:root {
+  font-family: 'S-CoreDream-3Light';
+  font-size: 10px;
+  --point-c1: #a18a68;
+  --gary1: #000;
+  --gary2: #272727;
+  --gary3: #9a9a9a;
+  --gary4: #efefef;
+  color: var(--gary2);
+  --max-w: 1280px;
+}
+body {
+  font-size: 1.6rem;
+}
+main {
+  margin: 50px 0;
+}
+.mw {
+  max-width: var(--max-w);
+  width: calc(100% - 4rem);
+  margin: auto;
+  position: relative;
+}
+
+/* header start */
+.hd {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 2rem;
+  border-bottom: 1px solid var(--gary4);
+}
+.hd h1 {
+  max-width: 250px;
+  min-width: 150px;
+  cursor: pointer;
+}
+.hd h1 path {
+  transition: 0.3s;
+}
+.hd h1:hover path {
+  fill: var(--point-c1);
+}
+.hd .gnb {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.hd .gnb a {
+  padding: 1rem 2rem;
+  outline: none;
+  transition: 0.3s;
+  position: relative;
+}
+.hd .gnb a:hover {
+  color: var(--point-c1);
+}
+
+.hd .gnb a::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: var(--point-c1);
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.3s;
+}
+.hd .gnb a:hover::before,
+.hd .gnb a:focus::before,
+.hd .gnb a.on::before {
+  opacity: 1;
+}
+.hd button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.hd button path {
+  fill: var(--gary2);
+  transition: 0.3s;
+}
+.hd button:hover path {
+  fill: var(--point-c1);
+}
+.hd .ham {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  .hd .ham {
+    display: block;
+    position: fixed;
+    right: 20px;
+    z-index: 200;
+  }
+  .hd .gnb,
+  .hd .person {
+    display: none;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    z-index: 100;
+  }
+  .hd .gnb {
+    height: 100%;
+    background-color: bisque;
+    top: 0;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 180px;
+  }
+  .hd .person {
+    justify-content: center;
+    top: 100px;
+  }
+  .hd .gnb.on,
+  .hd .person.on {
+    display: flex;
+  }
+}
+/* header end */
+
+/* 공통 디자인  슬라이드 dot bg */
+.swiper-pagination-bullet-active {
+  background-color: var(--point-c1);
+}
+.nav-tabs .nav-link {
+  padding: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  color: var(--gary3);
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--point-c1);
+  background-color: #eaeaea;
+}

@@ -1,0 +1,36 @@
+.pCard {
+  position: relative;
+  cursor: pointer;
+}
+.pCard > p {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--point-c1);
+  font-size: 0.7em;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: white;
+}
+.pCard > div {
+  position: relative;
+  padding-top: 100%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.pCard > div img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pCard > figcaption > * {
+  display: block;
+  line-height: 2em;
+}
+.pCard > figcaption > span {
+  color: var(--point-c1);
+}

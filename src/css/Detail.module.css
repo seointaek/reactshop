@@ -1,0 +1,25 @@
+.detailCon {
+  display: flex;
+  gap: 4rem;
+}
+.detailCon .img {
+  width: 50%;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.detailCon .img img {
+  width: 100%;
+}
+.detailCon .desc {
+  flex: 1;
+  line-height: 2;
+}
+.detailCon .desc > * {
+  display: block;
+}
+.detailCon .desc strong {
+  font-size: 1.5em;
+}
+.detailCon .desc span {
+  color: var(--point-c1);
+}

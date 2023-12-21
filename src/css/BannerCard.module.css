@@ -1,0 +1,46 @@
+.bannerCard {
+  position: relative;
+  padding-top: 40%;
+}
+.bannerCard > * {
+  position: absolute;
+}
+.bannerCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+.bannerCard > div {
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10%;
+  line-height: 2;
+  color: white;
+}
+.bannerCard > div > * {
+  display: block;
+}
+.bannerCard strong {
+  font-size: 1.1;
+  font-weight: bold;
+}
+.bannerCard span {
+  font-size: 0.9em;
+}
+.bannerCard button {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .bannerCard {
+    padding-top: 80%;
+  }
+}
